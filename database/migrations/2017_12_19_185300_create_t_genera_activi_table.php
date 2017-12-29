@@ -18,6 +18,7 @@ class CreateTGeneraActiviTable extends Migration {
 			$table->string('nom_activi', 50)->comment('Nombre Actividad');
 			$table->string('abr_activi', 15)->comment('Abreviacion Actividad');
 			$table->boolean('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 
