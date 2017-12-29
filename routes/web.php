@@ -23,6 +23,9 @@ Route::group(['prefix' => 'admin'], function () {
 	    Route::get('actividades',array('as' => 'actividades.index','uses' => 'ActividadesController@index'));
 	    Route::put('actividades/{accion}',array('as' => 'actividades.changestatus','uses' => 'ActividadesController@changestatus'));
 
+	    Route::get('carrocerias',array('as' => 'carrocerias.index','uses' => 'CarroceriasController@index'));
+	    Route::put('carrocerias/{accion}',array('as' => 'carrocerias.changestatus','uses' => 'CarroceriasController@changestatus'));
+
 	    Route::get('colores',array('as' => 'colores.index','uses' => 'ColoresController@index'));
 	    Route::put('colores/{color}',array('as' => 'colores.changestatus','uses' => 'ColoresController@changestatus'));
 	    
