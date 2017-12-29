@@ -17,6 +17,7 @@ class CreateTHomoloNovedaTable extends Migration {
 			$table->integer('id', true);
 			$table->integer('t_noveda_gpsxxx_id')->index('fk_t_homolo_noveda_t_noveda_gpsxxx1')->comment('ID Novedad GPS');
 			$table->string('nom_noveda', 80)->comment('Nombre Novedad en Integrador');
+			$table->timestamps();
 		});
 	}
 

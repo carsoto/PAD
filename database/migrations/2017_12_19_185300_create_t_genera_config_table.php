@@ -25,6 +25,7 @@ class CreateTGeneraConfigTable extends Migration {
 			$table->float('val_galmax', 10, 0)->nullable()->comment('Galones Maximo a cargar');
 			$table->float('val_galmin', 10, 0)->nullable()->comment('Galones Minimo a cargar');
 			$table->string('fot_config', 50)->nullable()->comment('Foto de la configuracion');
+			$table->timestamps();
 		});
 	}
 

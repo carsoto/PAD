@@ -19,6 +19,7 @@ class CreateTGeneraMarcasTable extends Migration {
 			$table->string('nom_marcax', 30)->comment('Marca');
 			$table->integer('ind_tipoxx')->comment('1 Vehiculo; 2 Remolque');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

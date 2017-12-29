@@ -18,6 +18,7 @@ class CreateTOpegpsVehicuTable extends Migration {
 			$table->integer('t_vehicu_vehicu_id')->index('fk_t_opegps_vehicu_t_vehicu_vehicu1');
 			$table->integer('t_genera_opegps_id')->index('fk_t_opegps_vehicu_t_genera_opegps1');
 			$table->integer('ind_estado')->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

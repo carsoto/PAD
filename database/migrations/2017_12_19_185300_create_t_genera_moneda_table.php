@@ -18,6 +18,7 @@ class CreateTGeneraMonedaTable extends Migration {
 			$table->string('nom_moneda', 20)->comment('Nombre Moneda');
 			$table->string('sim_moneda', 2)->comment('Simbolo Moneda');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

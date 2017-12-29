@@ -18,6 +18,7 @@ class CreateTOpegpsRemolqTable extends Migration {
 			$table->integer('t_genera_opegps_id')->index('fk_t_opegps_remolq_t_genera_opegps1');
 			$table->integer('t_remolq_remolq_id')->index('fk_t_opegps_remolq_t_remolq_remolq1');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

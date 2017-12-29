@@ -16,6 +16,7 @@ class CreateTGeneraActionTable extends Migration {
 		{
 			$table->integer('cod_action', true);
 			$table->string('nom_action', 45)->nullable();
+			$table->timestamps();
 		});
 	}
 

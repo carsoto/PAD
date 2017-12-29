@@ -20,6 +20,7 @@ class CreateTAuditoDetailTable extends Migration {
 			$table->string('val_campox', 45);
 			$table->text('val_valuex', 65535);
 			$table->integer('cod_action')->comment('1 UPDATE; 2 DELETE');
+			$table->timestamps();
 		});
 	}
 

@@ -17,6 +17,7 @@ class CreateTEmptraConfigTable extends Migration {
 			$table->integer('t_tercer_tercer_id')->primary();
 			$table->string('nom_emptra', 60)->nullable()->comment('Nombre Empresa Transporte');
 			$table->string('img_emptra', 70)->nullable()->comment('Ruta Imagen');
+			$table->timestamps();
 		});
 	}
 

@@ -18,6 +18,7 @@ class CreateTGeneraOpegpsTable extends Migration {
 			$table->bigInteger('cod_opegps')->comment('Codigo Operador GPS');
 			$table->string('nom_opegps', 30)->comment('Nombre Operador GPS');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

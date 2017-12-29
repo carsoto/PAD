@@ -19,6 +19,7 @@ class CreateTGeneraLineasTable extends Migration {
 			$table->integer('cod_lineax')->nullable()->index('index_cod_colorx')->comment('Codigo Estandar');
 			$table->string('nom_lineax', 30)->comment('Linea');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

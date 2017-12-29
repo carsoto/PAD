@@ -55,6 +55,7 @@ class CreateTVehicuVehicuTable extends Migration {
 			$table->dateTime('fec_creaci')->nullable();
 			$table->integer('usr_modidi')->nullable();
 			$table->dateTime('fec_modifi')->nullable();
+			$table->timestamps();
 		});
 	}
 

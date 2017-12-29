@@ -18,6 +18,7 @@ class CreateTGeneraTipdocTable extends Migration {
 			$table->string('nom_docume', 45)->comment('Nombre Tipo Documento');
 			$table->string('abr_docume', 10)->comment('Abreviacion Tipo Documento');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

@@ -20,6 +20,7 @@ class CreateTGeneraCronesTable extends Migration {
 			$table->string('rut_script', 100)->comment('Ruta del Script');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
 			$table->string('cnf_cronxx', 30)->comment('Configuracion de ejecucion');
+			$table->timestamps();
 		});
 	}
 

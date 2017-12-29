@@ -20,6 +20,7 @@ class CreateTGeneraServicTable extends Migration {
 			$table->string('nom_rutaxx', 45)->comment('Ruta Servicio');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
 			$table->integer('ind_ordenx')->default(0)->comment('Order del menu, segun nivel');
+			$table->timestamps();
 		});
 	}
 

@@ -17,6 +17,7 @@ class CreateTTercerActiviTable extends Migration {
 			$table->integer('id', true);
 			$table->integer('t_genera_activi_id')->index('fk_t_tercer_activi_t_genera_activi1')->comment('ID Actividad');
 			$table->integer('t_tercer_tercer_id')->index('fk_t_tercer_activi_t_tercer_tercer1')->comment('ID Tercero');
+			$table->timestamps();
 		});
 	}
 

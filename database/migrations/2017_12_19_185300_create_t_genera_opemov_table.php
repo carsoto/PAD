@@ -17,6 +17,7 @@ class CreateTGeneraOpemovTable extends Migration {
 			$table->integer('id', true);
 			$table->string('nom_opemov', 45)->comment('Nombre Operador Movil');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

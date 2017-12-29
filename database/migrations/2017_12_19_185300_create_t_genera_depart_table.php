@@ -20,6 +20,7 @@ class CreateTGeneraDepartTable extends Migration {
 			$table->string('nom_depart', 50)->comment('Nombre Departamento');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
 			$table->string('abr_depart', 20)->nullable()->comment('Abreviacion Departamento');
+			$table->timestamps();
 		});
 	}
 

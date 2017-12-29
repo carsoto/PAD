@@ -17,6 +17,7 @@ class CreateTSeguriPerfilTable extends Migration {
 			$table->integer('id', true);
 			$table->string('nom_perfil', 40)->comment('Nombre Perfil');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 

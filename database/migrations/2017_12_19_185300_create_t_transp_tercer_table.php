@@ -22,6 +22,7 @@ class CreateTTranspTercerTable extends Migration {
 			$table->dateTime('fec_creaci');
 			$table->integer('usr_modifi')->nullable();
 			$table->dateTime('fec_modifi')->nullable();
+			$table->timestamps();
 		});
 	}
 

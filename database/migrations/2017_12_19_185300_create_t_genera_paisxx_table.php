@@ -20,6 +20,7 @@ class CreateTGeneraPaisxxTable extends Migration {
 			$table->string('nom_paisxx', 50)->comment('Nombre Pais');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
 			$table->string('abr_paisxx', 20)->nullable()->comment('Abreviacion Pais');
+			$table->timestamps();
 		});
 	}
 

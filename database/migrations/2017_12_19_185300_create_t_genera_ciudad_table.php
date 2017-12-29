@@ -21,6 +21,7 @@ class CreateTGeneraCiudadTable extends Migration {
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
 			$table->string('abr_ciudad', 20)->nullable()->comment('Abreviatura Ciudad');
 			$table->float('val_icaxxx', 10, 0)->nullable()->comment('Impuesto ICA');
+			$table->timestamps();
 		});
 	}
 

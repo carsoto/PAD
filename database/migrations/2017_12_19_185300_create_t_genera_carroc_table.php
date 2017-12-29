@@ -19,6 +19,7 @@ class CreateTGeneraCarrocTable extends Migration {
 			$table->string('nom_carroc', 30)->comment('Carroceria');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
 			$table->integer('ind_tipoxx')->comment('1 Vehiculo; 2 Remolque');
+			$table->timestamps();
 		});
 	}
 

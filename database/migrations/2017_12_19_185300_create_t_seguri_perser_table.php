@@ -17,6 +17,7 @@ class CreateTSeguriPerserTable extends Migration {
 			$table->integer('id', true);
 			$table->integer('t_seguri_perfil_id')->index('fk_t_seguri_perser_t_seguri_perfil1')->comment('ID Perfil');
 			$table->integer('t_genera_servic_id')->index('fk_t_seguri_perser_t_genera_servic1')->comment('ID Servicio');
+			$table->timestamps();
 		});
 	}
 

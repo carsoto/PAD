@@ -17,6 +17,7 @@ class CreateTServicServicTable extends Migration {
 			$table->integer('id', true);
 			$table->integer('cod_serpad')->index('Fk_genera_servic_padre')->comment('ID Servicio Padre');
 			$table->integer('cod_serhij')->index('Fk_genera_servic_hijo')->comment('ID Servicio Hijo');
+			$table->timestamps();
 		});
 	}
 

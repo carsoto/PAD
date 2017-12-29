@@ -41,6 +41,7 @@ class CreateFosUserTable extends Migration {
 			$table->integer('usr_modifi')->nullable();
 			$table->dateTime('fec_modifi')->nullable();
 			$table->integer('t_seguri_perfil_id')->index('fk_fos_user_t_seguri_perfil1')->comment('ID Perfil');
+			$table->timestamps();
 		});
 	}
 

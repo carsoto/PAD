@@ -17,6 +17,7 @@ class CreateTOpegpsMacblaTable extends Migration {
 			$table->integer('id', true);
 			$table->integer('cod_opepad')->index('FK_genera_opegps_padre');
 			$table->integer('cod_opehij')->index('Fk_genera_opegps_hijo');
+			$table->timestamps();
 		});
 	}
 

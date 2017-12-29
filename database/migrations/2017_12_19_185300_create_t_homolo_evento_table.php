@@ -17,6 +17,7 @@ class CreateTHomoloEventoTable extends Migration {
 			$table->integer('id', true);
 			$table->string('nom_evento', 80)->comment('Nombre del Evento en Integrador');
 			$table->integer('t_evento_gpsxxx_id')->index('fk_t_homolo_evento_t_evento_gpsxxx1')->comment('ID Evento GPS');
+			$table->timestamps();
 		});
 	}
 

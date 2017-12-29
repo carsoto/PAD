@@ -17,6 +17,7 @@ class CreateTGeneraModuloTable extends Migration {
 			$table->integer('cod_modulo', true);
 			$table->string('nom_modulo', 45)->nullable();
 			$table->string('des_modulo', 120)->nullable();
+			$table->timestamps();
 		});
 	}
 

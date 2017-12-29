@@ -18,6 +18,7 @@ class CreateTEventoGpsxxxTable extends Migration {
 			$table->integer('t_genera_opegps_id')->index('fk_t_evento_gpsxxx_t_genera_opegps1')->comment('ID Operador GPS');
 			$table->string('cod_evento', 15)->comment('Codigo Evento del Operador Gps');
 			$table->string('nom_evento', 60)->comment('Nombre Evento Operador GPS');
+			$table->timestamps();
 		});
 	}
 

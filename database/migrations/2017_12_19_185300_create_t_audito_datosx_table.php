@@ -17,6 +17,7 @@ class CreateTAuditoDatosxTable extends Migration {
 			$table->integer('id')->primary();
 			$table->dateTime('fec_audito');
 			$table->integer('fos_user_id')->index('fk_t_audito_datosx_fos_user1');
+			$table->timestamps();
 		});
 	}
 

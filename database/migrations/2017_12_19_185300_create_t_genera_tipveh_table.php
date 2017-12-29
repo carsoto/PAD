@@ -17,6 +17,7 @@ class CreateTGeneraTipvehTable extends Migration {
 			$table->integer('id', true);
 			$table->string('nom_tipveh', 30)->comment('Tipo Vehiculo');
 			$table->integer('ind_estado')->default(1)->comment('0 Inactivo; 1 Activo');
+			$table->timestamps();
 		});
 	}
 
